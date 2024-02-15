@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDoListito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="badbunny_bebe-reto03.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="headerTitulo" class="header__h1">toDoListito</h1>
+      </header>
+      <main>
+        <!-- REGISTRO -->
+        <section class="registro" id="registro">
+          <div class="registro__motivacion">
+            <div class="registro__textos">
+              <h2 class="registro__titulo">Organiza tu día, conquista tus metas</h2>
+              <p class="registro__descripcion">toDoListito es una aplicación sencilla, para crear notas sencillas.</p>
+            </div>
+          </div>
+          <div class="registro__formulario">
+            <input
+              id="nombre"
+              type="text"
+              class="formulario__input registro_input--nombre"
+              placeholder="Mi nombre es" />
+            <button id="ingresar" class="formulario__boton">Ingresar</button>
+            <br />
+            <span id="mensajeNombre" class="formulario__mensaje formulario__mensaje--inicial"
+              >Por favor ingresa un nombre</span
+            >
+          </div>
+        </section>
+        <!-- CREAR NOTAS -->
+        <section id="sectionCrearNotas" class="section--hidden">
+          <span id="mensajeNotas" class="formulario__mensaje"></span>
+          <button id="crearNota" class="formulario__boton formulario__boton--crear-nota">Crear nota</button>
+        </section>
+        <!-- FORMULARIO DE NOTAS -->
+        <section id="sectionNotas" class="section--hidden">
+          <div class="formulario">
+            <input id="nombreNota" class="formulario__input" type="text" placeholder="Nombre de la nota" />
+            <br />
+            <input id="descripcionNota" class="formulario__input" type="text" placeholder="Descripción de la nota" />
+            <br />
+            <select id="categoriaNota" name="">
+              <option value="Seleccione">Seleccione</option>
+              <option value="Compras">Compras</option>
+              <option value="Entretenimiento">Entretenimiento</option>
+              <option value="Hogar">Hogar</option>
+              <option value="Salud">Salud</option>
+              <option value="Deporte">Deporte</option>
+              <option value="Social">Social</option>
+              <option value="Viajes">Viajes</option>
+              <option value="Trabajo">Trabajo</option>
+              <option value="Estudio">Estudio</option>
+            </select>
+            <button id="añadirNota" class="formulario__boton">Añadir nota</button>
+            <p id="avisoNota" class="formulario__mensaje"></p>
+          </div>
+        </section>
+        <!-- ACÁ SE MUESTRAN LAS NOTAS CREADAS -->
+        <section id="listaNotas" class="section--hidden">
+          <div id="notas" class="nota"></div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__p">badBunnyBebe y @CodeaRock todos los derechos reservados</p>
+      </footer>
+    </div>
+
+    <script src="badbunny_bebe-reto03.js"></script>
+  </body>
+</html>

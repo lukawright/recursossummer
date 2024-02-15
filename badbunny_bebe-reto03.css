@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #eff7f6;
+}
+/* MAIN */
+.section--hidden {
+  display: none;
+}
+body {
+  background: #012a4a;
+}
+.container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #eff7f6;
+}
+.registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registro__motivacion {
+  height: 200px;
+  background-image: url(burbuja.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registro__textos {
+  text-align: center;
+  width: 80%;
+}
+.registro__titulo {
+  margin-bottom: 10px;
+}
+.registro__descripcion {
+  font-weight: 700;
+}
+.formulario__input {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  outline: none;
+  color: black;
+}
+.formulario__boton {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  outline: none;
+  color: black;
+}
+.formulario__mensaje--inicial {
+  opacity: 0;
+}
+.nota {
+  color: white;
+  width: 200px;
+  background: blue;
+  overflow: hidden;
+}
+.footer {
+  padding: 20px;
+}
+.footer__p {
+  text-align: center;
+  font-weight: 700;
+  color: #eff7f6;
+}
